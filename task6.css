@@ -1,0 +1,198 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  background-color: white;
+  display:flex;
+  gap:15px;
+  flex-wrap: wrap;
+  margin: 70px 10%  0 10% ;
+
+  
+  }
+
+  div {
+    background-color: gray;
+    width: 250px;
+    height: 300px;  
+    padding:10px;
+    position: relative;
+     word-break: break-all;
+    }
+    
+    div h2{
+      margin-bottom: 10px;
+      color:white;
+      margin-top: 25px;
+    }
+    div p{
+      
+      color:white;
+    }
+
+    
+div svg{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+  }
+
+  div svg:nth-child(1){
+    right:34px}
+
+  
+
+  div svg:hover *{
+  fill:red;
+  }
+  div svg#edit:hover *{
+  fill:pink;
+  }
+
+/* for plus button */
+  button{
+    height:250px;
+    background-color: gray;
+    width: 250px;
+    border: none;
+   }
+   
+   
+   button:hover{
+     background-color: beige;
+   }
+   
+   button span{
+   
+     font-size: 100px;
+     color: rgb(83, 75, 75) ;
+   }
+
+/* 
+this is for the modal backdrop */
+.mother-container{
+  background-color: #000000;
+  opacity: 0.9;
+  width:100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  display: none;
+}
+
+
+.mother-container span{
+  color: white;
+  font-size: 35px;
+  position: absolute;
+  right: 40px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+
+   .modal {
+    background-color: rgb(56, 51, 51);
+    width:25%;
+    margin: 180px auto;
+    text-align:center;
+    border-radius: 5%;
+    padding-bottom: 7px;
+    box-shadow: 0px 0px 150px 0px #000000;
+   }
+
+   
+ .modal input, textarea {
+  margin: 10px;
+  padding: 4px;
+  border: transparent;
+  border-bottom: 1px solid gray;
+  width:90%;
+  border-radius: 0 20px 35px rgba(0,0,0,0.1);
+  
+  } 
+
+  .modal .title{
+    margin-top:30px;
+    } 
+    
+    input:focus,textarea{
+      border: none;
+      outline:  none;
+    }
+
+    /* this is for submit button */
+ input[type="submit"]{
+  background-color: rgb(25, 185, 52);
+  display:block;
+  margin-left:20px;
+  align-items: center;
+  color:lightcyan;
+}
+
+
+.radio-container {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  gap:8px;
+  
+}
+
+.radio-container main{
+  height: 20px;
+  display: flex;
+  margin-bottom: 5px;
+} 
+
+.radio-container main:hover{
+  background-color: blanchedalmond;
+} 
+.radio-container label {
+  width: 30px;
+  display: inline-block;
+  height: 30px;
+  border-radius: 50%;
+  background-color: red;
+  border: 2px solid yellow;
+}
+
+input[type="radio"] {
+  display: none;
+}
+input#pink + label {
+  background-color:pink;
+}
+input[type="radio"]:checked + label {
+  border: 8px solid rgba(0, 128, 0, 0.807);
+}
+
+input#cyan + label {
+  background-color:cyan;
+}
+
+
+input#red + label {
+  background-color:red;
+}
+
+
+input#blue + label {
+  background-color:blue;
+}
+
+
+input#tomato + label {
+  background-color:tomato;
+}
+
+input#purple + label {
+  background-color:purple;
+}
+
+
+
